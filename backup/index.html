@@ -32,12 +32,7 @@ la estructura correta y guardar TODO tu CSS en el archivo styles.css
 <body>
 <div class="header">Cognits Blog</div>
 <div class="menu2">Buscar</div>
-<div class="menu"><a href="index.html">Home</a></div><br/><br/>
-<div class="menu2Buscador">
-	<form id="formularioBusqueda" class="formulario">
-	<input name="buscador" id="buscador" type="text" placeholder="Buscar..."/>
-	</form>
-</div>
+<div class="menu">Home</div>
 <div class="cuerpo"><h1>Cognits Blog</h1>
 	<p>El proyecto para que aprendan a usar HTML, CSS y Javascript.</p>
 	<div id="postsBlog" class="posts">
@@ -102,7 +97,7 @@ la estructura correta y guardar TODO tu CSS en el archivo styles.css
 		
 		<!--FIN CUARTO POST-->
 	</div>
-	
+	<div class = "posts" id="resultadoBusqueda"></div>
 </div>
 
 
@@ -113,7 +108,10 @@ la estructura correta y guardar TODO tu CSS en el archivo styles.css
     <script src='js/script.js'></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/hilitor.js"></script>
-
+    		<form id="formularioBusqueda" class="formulario">
+		<input name="buscador" id="buscador" type="text" placeholder="Buscar..."/>
+		<input type="reset" class="searcher" name="limpiar" value="Hide and clean" />
+		</form>
 
 
   </body>

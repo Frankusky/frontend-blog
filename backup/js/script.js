@@ -34,23 +34,20 @@ $(document).ready(function(){
 
 
 
-	$(".menu2").click(function(){
-		$(".menu2Buscador").slideToggle("slow");
-	});
+	//$(".menu2").click(function(){
+	
 	
 $.expr[':'].icontains = function(obj, index, meta, stack){
 		return (obj.textContent || obj.innerText || jQuery(obj).text() || '').toLowerCase().indexOf(meta[3].toLowerCase()) >= 0;
 		};
 		$(document).ready(function(){
-			var myHilitor = new Hilitor(".contenidoPost");
 			$("#buscador").keyup(function(){
 				 buscar = $(this).val();
 				 $('.posts .contenidoPost').removeClass('resaltar');
-				myHilitor.remove();
 					if(jQuery.trim(buscar) != ''){
+
 					$(".posts .contenidoPost:icontains('" + buscar + "')").addClass('resaltar');
-					
-  					myHilitor.apply(buscar);
+
 					}
    
    

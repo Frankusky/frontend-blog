@@ -1,79 +1,952 @@
-<head>
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<style>
+<head><script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script></head>
+<script type="text/javascript">
+$('img').attr('src','http://icons.iconarchive.com/icons/artua/dragon-soft/256/User-icon.png');
 
-a {
-    color: #0254EB
-}
-a:visited {
-    color: #0254EB
-}
-a.morelink {
-    text-decoration:none;
-    outline: none;
-}
-.morecontent span {
-    display: none;
-}
-.primerPost {
-    width: 400px;
-    background-color: #f0f0f0;
-    margin: 10px;
-}
-</style>
-<script>
-$(document).ready(function() {
-    var showChar = 100;
-    var ellipsestext = "...";
-    var moretext = "more";
-    var lesstext = "less";
-    $('.primerPost').each(function() {
-        var content = $(this).html();
- 
-        if(content.length > showChar) {
- 
-            var c = content.substr(0, showChar);
-            var h = content.substr(showChar-1, content.length - showChar);
- 
-            var html = c + '<span class="moreellipses">' + ellipsestext+ '&nbsp;</span><span class="morecontent"><span>' + h + '</span>&nbsp;&nbsp;<a href="" class="morelink">' + moretext + '</a></span>';
- 
-            $(this).html(html);
-        }
- 
-    });
- 
-    $(".morelink").click(function(){
-        if($(this).hasClass("less")) {
-            $(this).removeClass("less");
-            $(this).html(moretext);
-        } else {
-            $(this).addClass("less");
-            $(this).html(lesstext);
-        }
-        $(this).parent().prev().toggle();
-        $(this).prev().toggle();
-        return false;
-    });
-});
+/* just for test purpose */
+
 </script>
-</head>
-<div class="primerPost">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    Vestibulum laoreet, nunc eget laoreet sagittis,
-    quam ligula sodales orci, congue imperdiet eros tortor ac lectus.
-    Duis eget nisl orci. Aliquam mattis purus non mauris
-    blandit id luctus felis convallis.
-    Integer varius egestas vestibulum.
-    Nullam a dolor arcu, ac tempor elit. Donec.
+
+<div class="select-outer-container">
+        <h1 class="muted" id="type">Teachers</h1>
+
+    <div class="search-container">
+        <form class="form-search form-inline">
+            <input type="text" class="input-medium search-query" placeholder="Search">
+            <button type="submit" class="btn">Search</button>
+        </form>
+    </div>
 </div>
-<div class="primerPost">
-    Duis nisl nibh, egestas at fermentum at, viverra et purus.
-    Maecenas lobortis odio id sapien facilisis elementum.
-    Curabitur et magna justo, et gravida augue.
-    Sed tristique pellentesque arcu quis tempor.
-</div>
-<div class="primerPost">
-    consectetur adipiscing elit. Proin blandit nunc sed sem dictum id feugiat quam blandit.
-    Donec nec sem sed arcu interdum commodo ac ac diam. Donec consequat semper rutrum.
-    Vestibulum et mauris elit. Vestibulum mauris lacus, ultricies.
+<div class="row-fluid">
+    <div class="teachers">
+        <div class="span12">
+            <div class="scroll transparent">
+                <div class="staff-outer-container">
+                    <div class="staff-container">
+                        <div class="staff">
+                            <div class="staff-picture"> <a href="http://ahmedmathematics.weebly.com/index.html" target="_blank"><img src="img/people/teachers/ahmed.png" alt="" /></a>
+
+                            </div>
+                            <p><span class="bold">Mr. Ahmed</span>
+
+                                <br />Ext. 13417
+                                <br />Room 417/323
+                                <br />  <a href="mailto:ahmed@wcskids.net">ahmed@wcskids.net</a>
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="staff-container">
+                        <div class="staff">
+                            <div class="staff-picture">
+                                <img src="img/people/teachers/aiello.png" alt="" />
+                            </div>
+                            <p><span class="bold">Mrs. Aiello</span>
+
+                                <br />Ext. 13328
+                                <br />Room 328/323
+                                <br />  <a href="mailto:asusan@wcskids.net">asusan@wcskids.net</a>
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="staff-container">
+                        <div class="staff">
+                            <div class="staff-picture"> <a href="http://www.mraiosa.com/class/Home.html" target="_blank"><img src="img/people/teachers/aiosa.png" alt="" /></a>
+
+                            </div>
+                            <p><span class="bold">Mr. Aiosa</span>
+
+                                <br />Ext. 13419
+                                <br />Room 419/323
+                                <br />  <a href="mailto:baiosa@wcskids.net">baiosa@wcskids.net</a>
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="staff-container">
+                        <div class="staff">
+                            <div class="staff-picture"> <a href="http://mrsbagerismath.weebly.com/" target="_blank"><img src="img/people/teachers/bageris.png" alt="" /></a>
+
+                            </div>
+                            <p><span class="bold">Mrs. Bageris</span>
+
+                                <br />Ext. 13226
+                                <br />Room 226
+                                <br />  <a href="mailto:ebageris@wcskids.net">ebageris@wcskids.net</a>
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="staff-container">
+                        <div class="staff">
+                            <div class="staff-picture"> <a href="http://balasia.weebly.com/" target="_blank"><img src="img/people/teachers/balasia.png" alt="" /></a>
+
+                            </div>
+                            <p><span class="bold">Mrs. Balasia</span>
+
+                                <br />Ext. 13101
+                                <br />Room 101
+                                <br />  <a href="mailto:mbalasia@wcskids.net">mbalasia@wcskids.net</a>
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="staff-container">
+                        <div class="staff">
+                            <div class="staff-picture"> <a href="http://mrbardelline.weebly.com/" target="_blank"><img src="img/people/teachers/bardelline.png" alt="" /></a>
+
+                            </div>
+                            <p><span class="bold">Mr. Bardelline</span>
+
+                                <br />Ext. 13111
+                                <br />Room 111
+                                <br />  <a href="mailto:sbardelline@wcskids.net">sbardelline@wcskids.net</a>
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="staff-container">
+                        <div class="staff">
+                            <div class="staff-picture"> <a href="http://basshealth.weebly.com/" target="_blank"><img src="img/people/teachers/bass.png" alt="" /></a>
+
+                            </div>
+                            <p><span class="bold">Mrs. Bass</span>
+
+                                <br />Ext. 13113
+                                <br />Room 113/Gym
+                                <br />  <a href="mailto:bassn@wcskids.net">bassn@wcskids.net</a>
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="staff-container">
+                        <div class="staff">
+                            <div class="staff-picture"> <a href="http://sbellos.weebly.com/" target="_blank"><img src="img/people/teachers/bellos.png" alt="" /></a>
+
+                            </div>
+                            <p><span class="bold">Mrs. Bellos</span>
+
+                                <br />Ext. 13409
+                                <br />Room 409
+                                <br />  <a href="mailto:sbellos@wcskids.net">sbellos@wcskids.net</a>
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="staff-container">
+                        <div class="staff">
+                            <div class="staff-picture"> <a href="http://bennerbiology.weebly.com/" target="_blank"><img src="img/people/teachers/benner.png" alt="" /></a>
+
+                            </div>
+                            <p><span class="bold">Mrs. Benner</span>
+
+                                <br />Ext. 13313
+                                <br />Room 313
+                                <br />  <a href="mailto:benner@wcskids.net">benner@wcskids.net</a>
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="staff-container">
+                        <div class="staff">
+                            <div class="staff-picture"> <a href="http://darthbibik.weebly.com/index.html" target="_blank"><img src="img/people/teachers/bibik.png" alt="" /></a>
+
+                            </div>
+                            <p><span class="bold">Mr. Bibik</span>
+
+                                <br />Ext. 13407
+                                <br />Room 407
+                                <br />  <a href="mailto:bibikj@wcskids.net">bibikj@wcskids.net</a>
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="staff-container">
+                        <div class="staff">
+                            <div class="staff-picture"> <a href="http://blondinsblock.weebly.com/" target="_blank"><img src="img/people/teachers/blondin.png" alt="" /></a>
+
+                            </div>
+                            <p><span class="bold">Mrs. Blondin</span>
+
+                                <br />Ext. 13231
+                                <br />Room 231
+                                <br />  <a href="mailto:sblondin@wcskids.net">sblondin@wcskids.net</a>
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="staff-container">
+                        <div class="staff">
+                            <div class="staff-picture">
+                                <img src="img/people/teachers/brosnihan.png" alt="" />
+                            </div>
+                            <p><span class="bold">Mr. Brosnihan</span>
+
+                                <br />Ext. 13403
+                                <br />Room 403/323
+                                <br />  <a href="mailto:abrosnihan@wcskids.net">abrosnihan@wcskids.net</a>
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="staff-container">
+                        <div class="staff">
+                            <div class="staff-picture">
+                                <img src="img/people/teachers/cain.png" alt="" />
+                            </div>
+                            <p><span class="bold">Mrs. Cain</span>
+
+                                <br />Ext. 13410
+                                <br />Room 410
+                                <br />  <a href="mailto:kcain@wcskids.net">kcain@wcskids.net</a>
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="staff-container">
+                        <div class="staff">
+                            <div class="staff-picture"> <a href="http://callenderchemistry.weebly.com/" target="_blank"><img src="img/people/teachers/callender.png" alt="" /></a>
+
+                            </div>
+                            <p><span class="bold">Mr. Callender</span>
+
+                                <br />Ext. 13229
+                                <br />Room 229
+                                <br />  <a href="mailto:callendb@wcskids.net">callendb@wcskids.net</a>
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="staff-container">
+                        <div class="staff">
+                            <div class="staff-picture"> <a href="http://cathecardenas.weebly.com/" target="_blank"><img src="img/people/teachers/cardenas.png" alt="" /></a>
+
+                            </div>
+                            <p><span class="bold">Mrs. Cardenas</span>
+
+                                <br />Ext. 13220
+                                <br />Room 220
+                                <br />  <a href="mailto:cardenas@wcskids.net">cardenas@wcskids.net</a>
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="staff-container">
+                        <div class="staff">
+                            <div class="staff-picture"> <a href="http://careywcs.weebly.com/" target="_blank"><img src="img/people/teachers/carey.png" alt="" /></a>
+
+                            </div>
+                            <p><span class="bold">Mr. Carey</span>
+
+                                <br />Ext. 13312
+                                <br />Room 312
+                                <br />  <a href="mailto:carey@wcskids.net">carey@wcskids.net</a>
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="staff-container">
+                        <div class="staff">
+                            <div class="staff-picture"> <a href="http://mrcarpenter.weebly.com/" target="_blank"><img src="img/people/teachers/carpenter.png" alt="" /></a>
+
+                            </div>
+                            <p><span class="bold">Mr. Carpenter</span>
+
+                                <br />Ext. 13107
+                                <br />Room 107
+                                <br />  <a href="mailto:carpentej@wcskids.net">carpentej@wcskids.net</a>
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="staff-container">
+                        <div class="staff">
+                            <div class="staff-picture"> <a href="http://mrcetkovic.weebly.com/" target="_blank"><img src="img/people/teachers/cetkovic.png" alt="" /></a>
+
+                            </div>
+                            <p><span class="bold">Mr. Cetkovic</span>
+
+                                <br />Ext. 13305
+                                <br />Room 305
+                                <br />  <a href="mailto:rcetkovic@wcskids.net">rcetkovic@wcskids.net</a>
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="staff-container">
+                        <div class="staff">
+                            <div class="staff-picture"> <a href="http://chibanip.weebly.com/" target="_blank"><img src="img/people/teachers/chibani.png" alt="" /></a>
+
+                            </div>
+                            <p><span class="bold">Mrs. Chibani</span>
+
+                                <br />Ext. 13326
+                                <br />Room 326
+                                <br />  <a href="mailto:chibanip@wcskids.net">chibanip@wcskids.net</a>
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="staff-container">
+                        <div class="staff">
+                            <div class="staff-picture">
+                                <img src="img/people/teachers/culliton.png" alt="" />
+                            </div>
+                            <p><span class="bold">Mr. Culliton</span>
+
+                                <br />Ext. 13328
+                                <br />Room 328
+                                <br />  <a href="mailto:jculliton@wcskids.net">jculliton@wcskids.net</a>
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="staff-container">
+                        <div class="staff">
+                            <div class="staff-picture"> <a href="http://frauslessonplans.weebly.com/index.html" target="_blank"><img src="img/people/teachers/frau.png" alt="" /></a>
+
+                            </div>
+                            <p><span class="bold">Ms. Elkouri</span>
+
+                                <br />Ext. 13422
+                                <br />Room 422
+                                <br />  <a href="mailto:jelkouri@wcskids.net">jelkouri@wcskids.net</a>
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="staff-container">
+                        <div class="staff">
+                            <div class="staff-picture"> <a href="http://eafernandez.weebly.com/" target="_blank"><img src="img/people/teachers/fernandez.png" alt="" /></a>
+
+                            </div>
+                            <p><span class="bold">Mrs. Fernandez</span>
+
+                                <br />Ext. 13131
+                                <br />Room 131
+                                <br />  <a href="mailto:efernadez@wcskids.net">efernadez@wcskids.net</a>
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="staff-container">
+                        <div class="staff">
+                            <div class="staff-picture"> <a href="http://srafinn.weebly.com/" target="_blank"><img src="img/people/teachers/finn.png" alt="" /></a>
+
+                            </div>
+                            <p><span class="bold">Mrs. Finn</span>
+
+                                <br />Ext. 13421
+                                <br />Room 421
+                                <br />  <a href="mailto:efinn@wcskids.net">efinn@wcskids.net</a>
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="staff-container">
+                        <div class="staff">
+                            <div class="staff-picture"> <a href="http://edublogs.misd.net/fisher/" target="_blank"><img src="img/people/no_photo.png" alt="" /></a>
+
+                            </div>
+                            <p><span class="bold">Ms. Fisher</span>
+
+                                <br />Ext. 13325
+                                <br />Room 325
+                                <br />  <a href="mailto:jfisher@wcskids.net">jfisher@wcskids.net</a>
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="staff-container">
+                        <div class="staff">
+                            <div class="staff-picture">
+                                <img src="img/people/teachers/french.png" alt="" />
+                            </div>
+                            <p><span class="bold">Mr. French</span>
+
+                                <br />Ext. 13308
+                                <br />Room 308
+                                <br />  <a href="mailto:frenchj@wcskids.net">frenchj@wcskids.net</a>
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="staff-container">
+                        <div class="staff">
+                            <div class="staff-picture"> <a href="http://mrmaloney.weebly.com/" target="_blank"><img src="img/people/teachers/glaser.png" alt="" /></a>
+
+                            </div>
+                            <p><span class="bold">Mr. Glaser</span>
+
+                                <br />Ext. 13110
+                                <br />Media Center Annex
+                                <br />  <a href="mailto:glaser@wcskids.net">glaser@wcskids.net</a>
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="staff-container">
+                        <div class="staff">
+                            <div class="staff-picture"> <a href="http://mrgraysclasswmhs.weebly.com" target="_blank"><img src="img/people/teachers/gray.png" alt="" /></a>
+
+                            </div>
+                            <p><span class="bold">Mr. Gray</span>
+
+                                <br />Ext. 13215
+                                <br />Room 215
+                                <br />  <a href="mailto:jgray@wcskids.net">jgray@wcskids.net</a>
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="staff-container">
+                        <div class="staff">
+                            <div class="staff-picture"> <a href="http://hallr.weebly.com/" target="_blank"><img src="img/people/teachers/hall.png" alt="" /></a>
+
+                            </div>
+                            <p><span class="bold">Mr. Hall</span>
+
+                                <br />Ext. 13306
+                                <br />Room 306
+                                <br />  <a href="mailto:hallr@wcskids.net">hallr@wcskids.net</a>
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="staff-container">
+                        <div class="staff">
+                            <div class="staff-picture">
+                                <img src="img/people/teachers/hauser.png" alt="" />
+                            </div>
+                            <p><span class="bold">Ms. Hauser</span>
+
+                                <br />Ext. 13319
+                                <br />Room 319
+                                <br />  <a href="mailto:ahauser@wcskids.net">ahauser@wcskids.net</a>
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="staff-container">
+                        <div class="staff">
+                            <div class="staff-picture"> <a href="http://amihunter.edublogs.org/" target="_blank"><img src="img/people/teachers/hunter.png" alt="" /></a>
+
+                            </div>
+                            <p><span class="bold">Mrs. Hunter</span>
+
+                                <br />Ext. 13203
+                                <br />Room 203
+                                <br />  <a href="mailto:ahunter@wcskids.net">ahunter@wcskids.net</a>
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="staff-container">
+                        <div class="staff">
+                            <div class="staff-picture"> <a href="http://mrslindakay.weebly.com/" target="_blank"><img src="img/people/teachers/kay.png" alt="" /></a>
+
+                            </div>
+                            <p><span class="bold">Mrs. Kay</span>
+
+                                <br />Ext. 13300
+                                <br />Room 300
+                                <br />  <a href="mailto:kay@wcskids.net">kay@wcskids.net</a>
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="staff-container">
+                        <div class="staff">
+                            <div class="staff-picture"> <a href="http://mrkay.weebly.com/" target="_blank"><img src="img/people/teachers/mrkay.png" alt="" /></a>
+
+                            </div>
+                            <p><span class="bold">Mr. Kay</span>
+
+                                <br />Ext. 13124
+                                <br />Room 124
+                                <br />  <a href="mailto:rkay@wcskids.net">rkay@wcskids.net</a>
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="staff-container">
+                        <div class="staff">
+                            <div class="staff-picture"> <a href="http://JKay-Rivera.weebly.com" target="_blank"><img src="img/people/teachers/kay-rivera.png" alt="" /></a>
+
+                            </div>
+                            <p><span class="bold">Mrs. Kay-Rivera</span>
+
+                                <br />Ext. 12019
+                                <br />Room 131/133
+                                <br />  <a href="mailto:jrivera@wcskids.net">jrivera@wcskids.net</a>
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="staff-container">
+                        <div class="staff">
+                            <div class="staff-picture"> <a href="http://www.wcskids.net/wmhs/staff_websites/Kepler/KeplerLessonPlans.htm" target="_blank"><img src="img/people/teachers/kepler.png" alt="" /></a>
+
+                            </div>
+                            <p><span class="bold">Mr. Kepler</span>
+
+                                <br />Ext. 13202
+                                <br />Room 202
+                                <br />  <a href="mailto:kepler@wcskids.net">kepler@wcskids.net</a>
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="staff-container">
+                        <div class="staff">
+                            <div class="staff-picture"> <a href="http://kment.weebly.com/index.html" target="_blank"><img src="img/people/no_photo.png" alt="" /></a>
+
+                            </div>
+                            <p><span class="bold">Mr. Kment</span>
+
+                                <br />Ext. 13109
+                                <br />Room 109
+                                <br />  <a href="mailto:kmentg@wcskids.net">kmentg@wcskids.net</a>
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="staff-container">
+                        <div class="staff">
+                            <div class="staff-picture"> <a href="http://bb91.misd.net/webapps/login/" target="_blank"><img src="img/people/teachers/kourtakis.png" alt="" /></a>
+
+                            </div>
+                            <p><span class="bold">Mrs. Kourtakis</span>
+
+                                <br />Ext. 13404
+                                <br />Room 404
+                                <br />  <a href="mailto:akourtakis@wcskids.net">akourtakis@wcskids.net</a>
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="staff-container">
+                        <div class="staff">
+                            <div class="staff-picture"> <a href="http://mrkovacs.weebly.com/" target="_blank"><img src="img/people/teachers/kovacs.png" alt="" /></a>
+
+                            </div>
+                            <p><span class="bold">Mr. Kovacs</span>
+
+                                <br />Ext. 13405
+                                <br />Room 405
+                                <br />  <a href="mailto:kovacst@wcskids.net">kovacst@wcskids.net</a>
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="staff-container">
+                        <div class="staff">
+                            <div class="staff-picture"> <a href="http://dkudra.weebly.com/" target="_blank"><img src="img/people/teachers/kudra.png" alt="" /></a>
+
+                            </div>
+                            <p><span class="bold">Mrs. Kudra</span>
+
+                                <br />Ext. 13225
+                                <br />Room 225
+                                <br />  <a href="mailto:dkudra@wcskids.net">dkudra@wcskids.net</a>
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="staff-container">
+                        <div class="staff">
+                            <div class="staff-picture"> <a href="http://mrluedtke.weebly.com/" target="_blank"><img src="img/people/teachers/luedtke.png" alt="" /></a>
+
+                            </div>
+                            <p><span class="bold">Mr. Luedtke</span>
+
+                                <br />Ext. 13210
+                                <br />Room 210
+                                <br />  <a href="mailto:dluedtke@wcskids.net">dluedtke@wcskids.net</a>
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="staff-container">
+                        <div class="staff">
+                            <div class="staff-picture"> <a href="http://mrsmaldonadosenglishclass.weebly.com/" target="_blank"><img src="img/people/teachers/maldonado.png" alt="" /></a>
+
+                            </div>
+                            <p><span class="bold">Mrs. Maldonado</span>
+
+                                <br />Ext. 13205
+                                <br />Room 205
+                                <br />  <a href="mailto:mmaldonado@wcskids.net">mmaldonado@wcskids.net</a>
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="staff-container">
+                        <div class="staff">
+                            <div class="staff-picture"> <a href="http://mrmaloney.weebly.com/" target="_blank"><img src="img/people/teachers/maloney.png" alt="" /></a>
+
+                            </div>
+                            <p><span class="bold">Mr. Maloney</span>
+
+                                <br />Ext. 13105
+                                <br />Room 105
+                                <br />  <a href="mailto:maloneys@wcskids.net">maloneys@wcskids.net</a>
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="staff-container">
+                        <div class="staff">
+                            <div class="staff-picture"> <a href="http://biologyatmott.weebly.com/" target="_blank"><img src="img/people/teachers/memminger.png" alt="" /></a>
+
+                            </div>
+                            <p><span class="bold">Ms. Memminger</span>
+
+                                <br />Ext. 13219
+                                <br />Room 219
+                                <br />  <a href="mailto:memmings@wcskids.net">memmings@wcskids.net</a>
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="staff-container">
+                        <div class="staff">
+                            <div class="staff-picture"> <a href="http://milanov1.weebly.com/" target="_blank"><img src="img/people/teachers/milanov.png" alt="" /></a>
+
+                            </div>
+                            <p><span class="bold">Mr. Milanov</span>
+
+                                <br />Ext. 13112
+                                <br />Room 112
+                                <br />  <a href="mailto:tmilanov@wcskids.net">tmilanov@wcskids.net</a>
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="staff-container">
+                        <div class="staff">
+                            <div class="staff-picture"> <a href="http://www.warrenmottbandclub.com/" target="_blank"><img src="img/people/teachers/mrmiller.png" alt="" /></a>
+
+                            </div>
+                            <p><span class="bold">Mr. Miller</span>
+
+                                <br />Ext. 13651
+                                <br />Room 651
+                                <br />  <a href="mailto:emiller@wcskids.net">emiller@wcskids.net</a>
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="staff-container">
+                        <div class="staff">
+                            <div class="staff-picture"> <a href="http://rfegermillermath.weebly.com/" target="_blank"><img src="img/people/no_photo.png" alt="" /></a>
+
+                            </div>
+                            <p><span class="bold">Mrs. Miller</span>
+
+                                <br />Ext. 13402
+                                <br />Room 402
+                                <br />  <a href="mailto:rfeger@wcskids.net">rfeger@wcskids.net</a>
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="staff-container">
+                        <div class="staff">
+                            <div class="staff-picture"> <a href="http://msmenglish9.weebly.com/" target="_blank"><img src="img/people/teachers/mokrzycki.png" alt="" /></a>
+
+                            </div>
+                            <p><span class="bold">Ms. Mokrzycki</span>
+
+                                <br />Ext. 13209
+                                <br />Room 209/323
+                                <br />  <a href="mailto:smokrzycki@wcskids.net">smokrzycki@wcskids.net</a>
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="staff-container">
+                        <div class="staff">
+                            <div class="staff-picture">
+                                <img src="img/people/teachers/northrup.png" alt="" />
+                            </div>
+                            <p><span class="bold">Ms. Northrup</span>
+
+                                <br />Ext. 13201
+                                <br />Room 201
+                                <br />  <a href="mailto:anorthrup@wcskids.net">anorthrup@wcskids.net</a>
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="staff-container">
+                        <div class="staff">
+                            <div class="staff-picture"> <a href="http://davidoravec.weebly.com/index.html" target="_blank"><img src="img/people/teachers/mroravec.png" alt="" /></a>
+
+                            </div>
+                            <p><span class="bold">Mr. Oravec</span>
+
+                                <br />Ext. 13302
+                                <br />Room 302
+                                <br />  <a href="mailto:orvecd@wcskids.net">orvecd@wcskids.net</a>
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="staff-container">
+                        <div class="staff">
+                            <div class="staff-picture"> <a href="http://susanoravec.weebly.com/" target="_blank"><img src="img/people/no_photo.png" alt="" /></a>
+
+                            </div>
+                            <p><span class="bold">Mrs. Oravec</span>
+
+                                <br />Ext. 13103
+                                <br />Room 103
+                                <br />  <a href="mailto:oravecs@wcskids.net">oravecs@wcskids.net</a>
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="staff-container">
+                        <div class="staff">
+                            <div class="staff-picture"> <a href="http://mrsorowclass.weebly.com/" target="_blank"><img src="img/people/teachers/orow.png" alt="" /></a>
+
+                            </div>
+                            <p><span class="bold">Mrs. Orow</span>
+
+                                <br />Ext. 13414
+                                <br />Room 414
+                                <br />  <a href="mailto:forow@wcskids.net">forow@wcskids.net</a>
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="staff-container">
+                        <div class="staff">
+                            <div class="staff-picture"> <a href="http://wmhsspanish.weebly.com/" target="_blank"><img src="img/people/teachers/otterbacher.png" alt="" /></a>
+
+                            </div>
+                            <p><span class="bold">Ms. Otterbacher</span>
+
+                                <br />Ext. 13423
+                                <br />Room 423
+                                <br />  <a href="mailto:motterbacher@wcskids.net">motterbacher@wcskids.net</a>
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="staff-container">
+                        <div class="staff">
+                            <div class="staff-picture"> <a href="http://msotto.weebly.com/" target="_blank"><img src="img/people/teachers/otto.png" alt="" /></a>
+
+                            </div>
+                            <p><span class="bold">Ms. Otto</span>
+
+                                <br />Ext. 13224
+                                <br />Room 224
+                                <br />  <a href="mailto:kotto@wcskids.net">kotto@wcskids.net</a>
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="staff-container">
+                        <div class="staff">
+                            <div class="staff-picture"> <a href="http://mrspeabody.weebly.com/" target="_blank"><img src="img/people/teachers/peabody.png" alt="" /></a>
+
+                            </div>
+                            <p><span class="bold">Mrs. Peabody</span>
+
+                                <br />Ext. 13310
+                                <br />Room 310
+                                <br />  <a href="mailto:jpeabody@wcskids.net">jpeabody@wcskids.net</a>
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="staff-container">
+                        <div class="staff">
+                            <div class="staff-picture"> <a href="http://phillipsk.weebly.com/" target="_blank"><img src="img/people/teachers/phillips.png" alt="" /></a>
+
+                            </div>
+                            <p><span class="bold">Ms. Phillips</span>
+
+                                <br />Ext. 13606
+                                <br />Room 207
+                                <br />  <a href="mailto:kphillips@wcskids.net">kphillips@wcskids.net</a>
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="staff-container">
+                        <div class="staff">
+                            <div class="staff-picture"> <a href="http://wmmrsross.weebly.com/" target="_blank"><img src="img/people/teachers/ross.png" alt="" /></a>
+
+                            </div>
+                            <p><span class="bold">Mrs. Ross</span>
+
+                                <br />Ext. 13413
+                                <br />Room 330
+                                <br />  <a href="mailto:dross@wcskids.net">dross@wcskids.net</a>
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="staff-container">
+                        <div class="staff">
+                            <div class="staff-picture">
+                                <img src="img/people/teachers/sagman.png" alt="" />
+                            </div>
+                            <p><span class="bold">Mr. Sagman</span>
+
+                                <br />Ext. 13420
+                                <br />Room 420
+                                <br />  <a href="mailto:sagmanw@wcskids.net">sagmanw@wcskids.net</a>
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="staff-container">
+                        <div class="staff">
+                            <div class="staff-picture"> <a href="http://shifferd.weebly.com/" target="_blank"><img src="img/people/teachers/shifferd.png" alt="" /></a>
+
+                            </div>
+                            <p><span class="bold">Mr. Shifferd</span>
+
+                                <br />Ext. 13671
+                                <br />Room Gym/113
+                                <br />  <a href="mailto:shifferd@wcskids.net">shifferd@wcskids.net</a>
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="staff-container">
+                        <div class="staff">
+                            <div class="staff-picture"> <a href="http://www.wcskids.net/WMHS/Staff_Websites/Stone/StoneLessonPlans.pdf" target="_blank"><img src="img/people/teachers/stone.png" alt="" /></a>
+
+                            </div>
+                            <p><span class="bold">Ms. Stone</span>
+
+                                <br />Ext. 13401
+                                <br />Room 401
+                                <br />  <a href="mailto:stonet@wcskids.net">stonet@wcskids.net</a>
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="staff-container">
+                        <div class="staff">
+                            <div class="staff-picture">
+                                <img src="img/people/no_photo.png" alt="" />
+                            </div>
+                            <p><span class="bold">Mr. Stratton</span>
+
+                                <br />Ext. 13603
+                                <br />Room 133
+                                <br />  <a href="mailto:stratton@wcskids.net">stratton@wcskids.net</a>
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="staff-container">
+                        <div class="staff">
+                            <div class="staff-picture"> <a href="http://syswerda.weebly.com/" target="_blank"><img src="img/people/teachers/mssyswerda.png" alt="" /></a>
+
+                            </div>
+                            <p><span class="bold">Mrs. Syswerda</span>
+
+                                <br />Ext. 13603
+                                <br />Room 415
+                                <br />  <a href="mailto:asyswerda@wcskids.net">asyswerda@wcskids.net</a>
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="staff-container">
+                        <div class="staff">
+                            <div class="staff-picture">
+                                <img src="img/people/teachers/sywerda.png" alt="" />
+                            </div>
+                            <p><span class="bold">Mr. Syswerda</span>
+
+                                <br />Ext. 13603
+                                <br />Room 413
+                                <br />  <a href="mailto:gsyswerda@wcskids.net">gsyswerda@wcskids.net</a>
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="staff-container">
+                        <div class="staff">
+                            <div class="staff-picture"> <a href="http://tahrebandi.wikispaces.com/" target="_blank"><img src="img/people/teachers/tahrebandi.png" alt="" /></a>
+
+                            </div>
+                            <p><span class="bold">Mr. Tahrebandi</span>
+
+                                <br />Ext. 13671
+                                <br />Room Gym/113
+                                <br />  <a href="mailto:stahrebandi@wcskids.net">stahrebandi@wcskids.net</a>
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="staff-container">
+                        <div class="staff">
+                            <div class="staff-picture"> <a href="http://ctaylor.weebly.com/" target="_blank"><img src="img/people/teachers/mrtaylor.png" alt="" /></a>
+
+                            </div>
+                            <p><span class="bold">Mr. Taylor</span>
+
+                                <br />Ext. 13321
+                                <br />Room 321
+                                <br />  <a href="mailto:ctaylor@wcskids.net">ctaylor@wcskids.net</a>
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="staff-container">
+                        <div class="staff">
+                            <div class="staff-picture"> <a href="http://mrstaylorsclasspage.weebly.com/" target="_blank"><img src="img/people/teachers/taylor.png" alt="" /></a>
+
+                            </div>
+                            <p><span class="bold">Mrs. Taylor</span>
+
+                                <br />Ext. 13130
+                                <br />Room 130
+                                <br />  <a href="mailto:mtaylor@wcskids.net">mtaylor@wcskids.net</a>
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="staff-container">
+                        <div class="staff">
+                            <div class="staff-picture"> <a href="http://mrweston.weebly.com/" target="_blank"><img src="img/people/teachers/weston.png" alt="" /></a>
+
+                            </div>
+                            <p><span class="bold">Mr. Weston</span>
+
+                                <br />Ext. 13303
+                                <br />Room 303/323
+                                <br />  <a href="mailto:jweston@wcskids.net">jweston@wcskids.net</a>
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="staff-container">
+                        <div class="staff">
+                            <div class="staff-picture"> <a href="http://yassowarrenmott.weebly.com/" target="_blank"><img src="img/people/teachers/yasso.png" alt="" /></a>
+
+                            </div>
+                            <p><span class="bold">Mr. Yasso</span>
+
+                                <br />Ext. 13418
+                                <br />Room 418
+                                <br />  <a href="mailto:yasso@wcskids.net">yasso@wcskids.net</a>
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
