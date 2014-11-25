@@ -1,3 +1,2 @@
-Facer noluisse fabellas mei ex. Mea in qualisque mediocritatem, te movet accusata quo. Sit vitae vivendo volutpat in, ne sit alii nonumes deleniti. Quem tempor vel cu. No vis delenit pertinacia, enim inani democritum usu ut, no ceteros phaedrum maluisset sit.
-
-Sit porro tollit dictas et. Te sea ipsum assum, habemus sensibus cu cum. An oportere prodesset vim. Ei ius habeo quaestio. Choro libris cu his. Tritani propriae ne usu, mea cu causae dolorum, mea no veniam exerci. Quas vidit ne vis.
+La autoestima es la valoración que tiene hacia uno mismo. Es de suma importancia, puesto que si uno no se aprecia, los demás tampoco lo harán, además que influye en la moral y en la capacidad de uno, debido a que si se tiene una autoestima baja, puede llegar al punto en que cree que es incapaz para realizar algún trabajo o acción.
+Al igual que la responsabilidad incondicional, mantener la palabra es un valor de suma importancia, puesto que genera confianza en las demás personas hacia uno mismo, y esto a su vez abre muchas puertas.

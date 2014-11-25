@@ -38,25 +38,20 @@ $(document).ready(function(){
 		$(".menu2Buscador").slideToggle("slow");
 	});
 	
-$.expr[':'].icontains = function(obj, index, meta, stack){
+	$.expr[':'].icontains = function(obj, index, meta, stack){
 		return (obj.textContent || obj.innerText || jQuery(obj).text() || '').toLowerCase().indexOf(meta[3].toLowerCase()) >= 0;
-		};
-		$(document).ready(function(){
-			var myHilitor = new Hilitor(".contenidoPost");
-			$("#buscador").keyup(function(){
-				 buscar = $(this).val();
-				 $('.posts .contenidoPost').removeClass('resaltar');
-				myHilitor.remove();
-					if(jQuery.trim(buscar) != ''){
+	};
+	$(document).ready(function(){
+		var myHilitor = new Hilitor(".contenidoPost");
+		$("#buscador").keyup(function(){
+			buscar = $(this).val();
+			$('.posts .contenidoPost').removeClass('resaltar');
+			myHilitor.remove();
+				if(jQuery.trim(buscar) != ''){
 					$(".posts .contenidoPost:icontains('" + buscar + "')").addClass('resaltar');
-					
-  					myHilitor.apply(buscar);
-					}
-   
-   
-			   // });
+					myHilitor.apply(buscar);
+				}
 		});
-
 	});
 
 /*		PENDIENTE: APARECER SOLO UN POST
@@ -175,10 +170,4 @@ $.expr[':'].icontains = function(obj, index, meta, stack){
 		}
 		$("input").val("");
 	});
-
-
-
-
-
-
 });
